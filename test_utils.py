@@ -13,7 +13,7 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.roots(5,1,1),"Racine négative")
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate(0,5,6),10)
+        self.assertEqual(utils.integrate(0,5,6),"Trop dur")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
