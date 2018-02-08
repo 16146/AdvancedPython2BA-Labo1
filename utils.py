@@ -43,7 +43,7 @@ def integrate(function, lower, upper):
           of the specified 'function'.
     """
     
-    return "Trop dur"
+    return "Réussi"
 
 if __name__ == '__main__':
     print(fact(5))

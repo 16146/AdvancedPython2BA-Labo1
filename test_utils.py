@@ -7,13 +7,13 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        self.assertEqual(utils.fact(5),120)
+        self.assertEqual(utils.fact(6),720)
     
     def test_roots(self):
         self.assertEqual(utils.roots(5,1,1),"Racine négative")
     
     def test_integrate(self):
-        self.assertEqual(utils.integrate(0,5,6),"Trop dur")
+        self.assertEqual(utils.integrate(0,5,6),"Réussi")
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
