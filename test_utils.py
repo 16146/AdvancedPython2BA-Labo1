@@ -9,9 +9,11 @@ class TestUtils(unittest.TestCase):
     def test_fact(self):
         self.assertEqual(utils.fact(6),720)
         self.assertEqual(utils.fact(0),0)
+        
     
     def test_roots(self):
         self.assertEqual(utils.roots(5,1,1),"Racine négative")
+        self.assertEqual(utils.roots(1,2,0),(0,-2))
         
     def test_integrate(self):
         self.assertEqual(utils.integrate(0,5,6),"Réussi")

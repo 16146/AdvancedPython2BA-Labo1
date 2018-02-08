@@ -33,7 +33,7 @@ def roots(a, b, c):
     if delta > 0:
         un = ((-b)+((delta)**(1/2)))/(2*a)
         deux =((-b)-((delta)**(1/2)))/(2*a)
-        return (un,deux)
+        return un, deux
 
 def integrate(function, lower, upper):
     """Approximates the integral of a fonction between two bounds
