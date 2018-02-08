@@ -14,6 +14,8 @@ def fact(n):
     for i in range (n):
         if i  != 0:
            result = result * i
+        if n == 0:
+            return 0
     return result
 
 def roots(a, b, c):
