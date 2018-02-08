@@ -10,7 +10,7 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.fact(5),120)
     
     def test_roots(self):
-        self.assertEqual(utils.roots(5,1,1),4)
+        self.assertEqual(utils.roots(5,1,1),"Racine négative")
     
     def test_integrate(self):
         self.assertEqual(utils.integrate(0,5,6),10)
