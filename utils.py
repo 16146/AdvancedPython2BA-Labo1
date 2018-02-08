@@ -10,7 +10,11 @@ def fact(n):
     Post: Returns the factorial of 'n'.
     Throws: ValueError if n < 0
     """
-    return 120
+    result = n
+    for i in range (n):
+        if i  != 0:
+           result = result * i
+    return result
 
 def roots(a, b, c):
     """Computes the roots of the ax^2 + bx + x = 0 polynomial.
@@ -19,7 +23,15 @@ def roots(a, b, c):
     Post: Returns a tuple with zero, one or two elements corresponding
           to the roots of the ax^2 + bx + c polynomial.
     """
-    return 4
+    delta = (b**2)-(4*a*c)
+    if delta <0:
+        return "Racine négative"
+    if delta == 0:
+        return ((-b))/(2*a)
+    if delta > 0:
+        un = ((-b)+((delta)**(1/2)))/(2*a)
+        deux =((-b)-((delta)**(1/2)))/(2*a)
+        return (un,deux)
 
 def integrate(function, lower, upper):
     """Approximates the integral of a fonction between two bounds
@@ -30,7 +42,8 @@ def integrate(function, lower, upper):
     Post: Returns an approximation of the integral from 'lower' to 'upper'
           of the specified 'function'.
     """
-    return 10
+    
+    return "Trop dur"
 
 if __name__ == '__main__':
     print(fact(5))
